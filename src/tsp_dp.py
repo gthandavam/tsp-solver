@@ -1,3 +1,5 @@
+#Modified the code(albeit slightly) sourced from 
+#http://www.digitalmihailo.com/traveling-salesman-problem-dynamic-algorithm-implementation-in-python/
 def solve_tsp_dynamic(all_distances):
     #initial value - just distance from 0 to every other point + keep the track of edges
     A = {(frozenset([0, idx+1]), idx+1): (dist, [0,idx+1]) for idx,dist in enumerate(all_distances[0][1:])}
